@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Arni",
+      "email": "Arni@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Arni2",
+      "email": "Arni2@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Arni3",
+      "email": "Arni3@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Arni4",
+      "email": "Arni4@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Arni5",
+      "email": "Arni5@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Arni6",
+      "email": "Arni6@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "Arni7",
+      "email": "Arni7@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "Arni8",
+      "email": "Arni8@gmail.com"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
