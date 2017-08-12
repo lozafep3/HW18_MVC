@@ -7,15 +7,37 @@
 </head>
 <body>
 
-    <div class="userlist-wrapper">
-        <!--<form class="user">-->
-            <!--<span class="db-id">${value.id}</span>-->
-            <!--<span class="db-name">${value.name}</span>-->
-            <!--<span class="db-email">${value.email}</span>-->
-            <!--<input type="button" class="button delete" value="Delete">-->
-            <!--<input type="button" class="button edit" value="Edit">-->
-        <!--</form>-->
-    </div>
+    <div class="userlist-wrapper"></div>
+
+    <script type="text/template" id="user-view-template">
+        <form class="user">
+            <span class="db-id"><%=id%></span>
+            <span class="db-name"><%=name%></span>
+            <span class="db-email"><%=email%></span>
+            <input type="button" class="button delete" value="Delete">
+            <input type="button" class="button edit" value="Edit">
+        </form>
+    </script>
+
+    <script type="text/template" id="user-edit-template">
+        <input class="db-id" value="<%=id%>">
+        <input class="db-name" value="<%=name%>">
+        <input class="db-email" value="<%=email%>">
+        <input type="button" class="button back" value="Back">
+        <input type="button" class="button save" value="Save">
+    </script>
+
+    <script type="text/template" id="user-edited-template">
+        <span class="db-id"><%=id%></span>
+        <span class="db-name"><%=name%></span>
+        <span class="db-email"><%=email%></span>
+        <input type="button" class="button delete" value="Delete">
+        <input type="button" class="button edit" value="Edit">
+    </script>
+
+    <script type="text/template" id="database-error-template">
+        <form class="user"><%=error%></form>
+    </script>
 
     <script src="js/libs/jquery-3.2.1.min.js"></script>
     <script src="js/libs/lodash.min.js"></script>
