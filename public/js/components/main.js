@@ -38,6 +38,7 @@ function renderUsers (data) {
 }
 
 function editUser () {
+    let currentCode = $(this).parent().html();
     let template = _.template($('#user-edit-template').html());
     let data = {
         id: $(this).parent().find('.db-id').text(),
@@ -45,7 +46,7 @@ function editUser () {
         email: $(this).parent().find('.db-email').text()
     };
 
-    $(this).parent().html(template(data));
+    $(this).parent().data('code', currentCode).html(template(data));
 }
 
 function deleteUser () {
